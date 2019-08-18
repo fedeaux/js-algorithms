@@ -1,0 +1,21 @@
+{
+  "name": "js-algorithms",
+  "version": "1.0.0",
+  "description": "Just Javascript Algorithms :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Pedro Bernardes",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "js-algorithms"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "devDependencies": {
+    "jasmine": "^3.4.0"
+  }
+}
