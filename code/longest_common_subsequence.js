@@ -11,7 +11,6 @@ class LongestCommonSubsequence {
         return this.fromLcsTable(this.string1.length - 1, this.string2.length - 1);
     }
 
-
     populateLcsTable() {
         for(let i = 0; i < this.string1.length; i += 1) {
             for(let j = 0; j < this.string2.length; j += 1) {

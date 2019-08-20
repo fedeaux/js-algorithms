@@ -17,5 +17,8 @@
   ],
   "devDependencies": {
     "jasmine": "^3.4.0"
+  },
+  "dependencies": {
+    "benchmark": "^2.1.4"
   }
 }
