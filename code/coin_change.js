@@ -7,6 +7,7 @@ class CoinChange {
         this.coins = coins;
         this.value = value;
         this.memoize = true;
+        this.verbose = false;
         this.computations = {};
         this.cache = [];
     }
@@ -14,8 +15,11 @@ class CoinChange {
     solve() {
         let n = this.coinChange(this.coins.length - 1, this.value);
         let totalComputations = Object.values(this.computations).reduce((sum, value) => { return sum + value; }, 0);
-        console.log(this.computations);
-        console.log(`Total computations ${totalComputations}`);
+
+        if(this.verbose) {
+            console.log(this.computations);
+            console.log(`Total computations ${totalComputations}`);
+        }
         return n;
     }
 
