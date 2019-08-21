@@ -23,12 +23,12 @@ class Knapsack {
             let valueWithoutItem = this.knapsack(i - 1, currentCapacity);
             this.knapsackTable[i] = this.knapsackTable[i] || [];
             this.knapsackTable[i][currentCapacity] = Math.max(valueWithItem, valueWithoutItem);
-            return this.knapsackTable[i][currentCapacity];
         } else { //We can't add the current item
             this.knapsackTable[i] = this.knapsackTable[i] || [];
             this.knapsackTable[i][currentCapacity] = this.knapsack(i - 1, currentCapacity);
-            return this.knapsackTable[i][currentCapacity];
         }
+
+        return this.knapsackTable[i][currentCapacity];
     }
 
     selectedItems() {
